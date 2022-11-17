@@ -1,0 +1,38 @@
+.hero {
+  padding: 200px 0;
+  background-color: var(--hero-background-color);
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/overlay.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-title {
+  margin: 0 auto;
+  max-width: 700px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: var(--primary-white-color);
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.button.primary {
+  transition: background-color var(--trn);
+  &:hover,
+  &:focus {
+    background-color: var(--hero-button-accent);
+  }
+}
