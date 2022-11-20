@@ -1,0 +1,80 @@
+.hero {
+  max-width: 1600px;
+  padding: 118px 0;
+  margin: 0 auto;
+  background-color: var(--hero-background-color);
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.overlay {
+  max-width: 1600px;
+  //  height: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../../images/overlay1px-mob.jpg');
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/overlay2px-mob.jpg');
+  }
+
+  @include tablet {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/overlay1px-tab.jpg');
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../images/overlay2px-tab.jpg');
+    }
+  }
+
+  @include decktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/overlay1px.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../images/overlay2px.jpg');
+    }
+  }
+}
+.hero-title {
+  margin: 0 auto;
+  max-width: 360px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: var(--primary-white-color);
+  font-family: 'Roboto';
+  font-weight: 900;
+
+  font-size: 26px;
+  line-height: 1.62;
+  text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.button.primary {
+  transition: background-color var(--trn);
+  &:hover,
+  &:focus {
+    background-color: var(--hero-button-accent);
+  }
+}
