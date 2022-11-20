@@ -16,24 +16,24 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../../images/overlay1px-mob.jpg');
+    url('../images/overlay1px-mob.jpg');
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/overlay2px-mob.jpg');
+      url('../images/overlay2px-mob.jpg');
   }
 
   @include tablet {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/overlay1px-tab.jpg');
+      url('../images/overlay1px-tab.jpg');
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../../images/overlay2px-tab.jpg');
+        url('../images/overlay2px-tab.jpg');
     }
   }
 
@@ -41,14 +41,14 @@
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/overlay1px.jpg');
+      url('../images/overlay1px.jpg');
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../../images/overlay2px.jpg');
+        url('../images/overlay2px.jpg');
     }
   }
 }
