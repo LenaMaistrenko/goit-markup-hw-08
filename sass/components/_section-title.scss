@@ -1,0 +1,11 @@
+.section-title {
+    color: var(--title-color);
+    font-weight: 700;
+    @media screen and (max-width: 1199px) {
+            font-size: 28px;
+    
+        }
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
