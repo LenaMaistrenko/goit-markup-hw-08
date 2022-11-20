@@ -1,0 +1,225 @@
+.header {
+  border-bottom: 1px solid var(--header-border);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  margin-left: 93px;
+}
+
+.site-nav__list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site-nav__item {
+  .site-nav__list &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-nav__list,
+.site-address {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header__logo {
+  color: var(--logo-black-color);
+}
+
+.site-nav .link {
+  display: block;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--title-color);
+  transition: color var(--trn);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.site-address {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width :1199px) {
+    display: flex;
+    flex-direction: column;
+      margin-left: auto;
+      justify-content: start;
+      gap: 10px;
+  }
+     @media screen and (min-width: 1200px){
+      display: flex;
+        margin-left: auto;
+        gap: 50px;
+     }
+  
+}
+
+.site-address__item {
+  display: flex;
+}
+
+.site-address__link {
+  color: var(--primary-text-color);
+  @media screen and (min-width: 768px) and (max-width :1199px) {
+   
+  }
+    @media screen and (min-width: 1200px){
+      padding-top: 32px;
+      padding-bottom: 32px;}
+  
+  transition: color var(--trn);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.site-address__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+.link.current {
+
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+}
+.btn-open {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+}
+.mob-menu {
+  @media screen and (min-width: 768px) {
+      display: none;
+    
+    }
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-white-color);
+  top: 0;
+}
+.mob-container {
+  position: relative;
+  padding-left: 40px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  overflow: auto;
+}
+.nav-adr-soc {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+.adr-soc {
+  display: flex;
+}
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  display: block;
+}
+.mob-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mob-list__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mob-list__link.current {
+  color: var(--accent-color);
+}
+
+.mob-address__link-tel {
+  @media screen and (max-width: 351px) {
+font-size: 28px;
+  line-height: calc(40 / 34);
+  }
+  display: flex;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  margin-bottom: 32px;
+}
+.mob-address__link-mail {
+  display: flex;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+  color: #757575;
+}
+.adr-soc {
+  flex-direction: column;
+}
+.menu-soc__link {
+    @media screen and (max-width: 420px) {
+        font-size: 11px;
+        line-height: calc(22 / 18);
+      }
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.menu-soc__list:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+.menu-soc__list:not(:first-child) {
+  padding-left: 10px;
+}
+.menu-soc {
+  display: flex;
+}
