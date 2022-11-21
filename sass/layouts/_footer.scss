@@ -169,16 +169,8 @@
   display: flex;
   flex-direction: column;
   @media screen and (max-width: 1199px) {
-
     justify-content: center;
-    margin-bottom: 60px;
-    // max-width: 100%;
-    // padding-left: 15px;
-    // padding-right: 15px;
   }
-  //align-items: baseline;
-  // margin-top: 12px;
-  // margin-left: 93px;
 }
 
 .form-footer {
@@ -191,9 +183,13 @@
 }
 
 .footer-input {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px){
     display: flex;
-    width: 100%;
+      width: 100%;
+  }
+  @media screen and (min-width: 768px) and(max-width: 1199px) {
+    display: flex;
+    width: 450px;
   }
   @media screen and (min-width: 1200px) {
     width: 358px;
