@@ -464,6 +464,7 @@ body {
     margin-left: auto;
     justify-content: start;
     gap: 10px;
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -602,6 +603,7 @@ body {
 
 .mob-address__link-mail {
   display: flex;
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.1666666667;
   letter-spacing: 0.02em;
@@ -860,6 +862,7 @@ body {
 @media screen and (max-width: 1199px) {
   .section-title {
     font-size: 28px;
+    margin-bottom: 30px;
   }
 }
 
@@ -962,6 +965,7 @@ body {
 @media screen and (max-width: 1199px) {
   .clients-title {
     font-size: 28px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1207,7 +1211,6 @@ body {
 @media screen and (max-width: 1199px) {
   .row-enjoy {
     justify-content: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -1236,10 +1239,16 @@ body {
   outline: transparent;
   transition: border-color var(--trn);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .footer-input {
     display: flex;
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-input {
+    display: flex;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
