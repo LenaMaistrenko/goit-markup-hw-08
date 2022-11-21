@@ -58,19 +58,20 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 768px) and (max-width :1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
-      margin-left: auto;
-      justify-content: start;
-      gap: 10px;
+    margin-left: auto;
+    justify-content: start;
+    gap: 10px;
+    font-size: 12px;
+
   }
-     @media screen and (min-width: 1200px){
-      display: flex;
-        margin-left: auto;
-        gap: 50px;
-     }
-  
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+  }
 }
 
 .site-address__item {
@@ -79,13 +80,13 @@
 
 .site-address__link {
   color: var(--primary-text-color);
-  @media screen and (min-width: 768px) and (max-width :1199px) {
-   
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
   }
-    @media screen and (min-width: 1200px){
-      padding-top: 32px;
-      padding-bottom: 32px;}
-  
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
   transition: color var(--trn);
   &:hover,
   &:focus {
@@ -100,7 +101,6 @@
 }
 
 .link.current {
-
   &::after {
     position: absolute;
     content: '';
@@ -122,9 +122,8 @@
 }
 .mob-menu {
   @media screen and (min-width: 768px) {
-      display: none;
-    
-    }
+    display: none; 
+  }
   position: fixed;
   z-index: 1;
   width: 100vw;
@@ -179,8 +178,8 @@
 
 .mob-address__link-tel {
   @media screen and (max-width: 351px) {
-font-size: 28px;
-  line-height: calc(40 / 34);
+    font-size: 28px;
+    line-height: calc(40 / 34);
   }
   display: flex;
   font-weight: 500;
@@ -192,6 +191,7 @@ font-size: 28px;
 }
 .mob-address__link-mail {
   display: flex;
+  font-weight: 500;
   font-size: 24px;
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
@@ -202,10 +202,10 @@ font-size: 28px;
   flex-direction: column;
 }
 .menu-soc__link {
-    @media screen and (max-width: 420px) {
-        font-size: 11px;
-        line-height: calc(22 / 18);
-      }
+  @media screen and (max-width: 420px) {
+    font-size: 11px;
+    line-height: calc(22 / 18);
+  }
   font-weight: 500;
   font-size: 18px;
   line-height: calc(22 / 18);
